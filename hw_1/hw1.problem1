@@ -1,0 +1,47 @@
+Script started on Tue Jan  9 05:50:49 2024
+# echo "Hello and welcome to the new quarter!"
+Hello and welcome to the new quarter!
+# date
+Tue Jan  9 05:51:10 UTC 2024
+# echo $HOME
+/root
+# cd ~
+# ls
+# mkdir temp
+// To see if the temp folder is created successfully
+# ls
+temp
+# mv temp temp_new
+// To see if the folder is renamed successfully
+# ls
+temp_new
+# cd temp_new
+# touch file5
+// To see if the file is created successfully
+# ls
+file5
+// To see if the file is renamed successfully
+# mv file5 test
+# ls
+test
+# cd ..
+# rm -r temp_new
+// To see if the file is deleted successfully
+# ls
+# cd /source
+# echo "It's a secret!" > secretfile
+# chmod 444 secretfile
+# ls -l secretfile
+-r--r--r-- 1 root root 15 Jan  9 05:52 secretfile
+// Write error because it is read only mode
+# cat >> secretfile
+sh: 22: cannot create secretfile: Permission denied
+// Add more text with change the Permission
+# chmod +w secretfile
+# ls -l secretfile
+-rw-r--r-- 1 root root 15 Jan  9 05:52 secretfile
+# cat >> secretfile
+Hello
+# exit
+
+Script done on Tue Jan  9 05:52:54 2024
