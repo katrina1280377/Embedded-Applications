@@ -29,7 +29,7 @@ void reverse_in_place(int* arr, int len) {
     }
 }
 
-int num_occurrences(int* arr, int len, int value) {
+int num_occurences(int* arr, int len, int value) {
     int count = 0;
     for (int i = 0; i < len; i++) {
         if (arr[i] == value) {

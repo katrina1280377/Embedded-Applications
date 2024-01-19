@@ -32,6 +32,6 @@ namespace {
 
   TEST(HW2,NumInstances) {
     int a[] = { 1, 1, 2, 3, 1, 4, 5, 2, 20, 5 };
-    ASSERT_EQ(num_occurrences(a,10,1), 3);
+    ASSERT_EQ(num_occurences(a,10,1), 3);
   }
 } // namespace
