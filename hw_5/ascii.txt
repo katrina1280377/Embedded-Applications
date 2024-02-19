@@ -1,1 +1,0 @@
-This is a sentence. Don't think of wier_d strings as words. Really, 123 is a nice number.
