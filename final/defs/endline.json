@@ -1,0 +1,19 @@
+{
+    "name": "Endline",
+    "type": "dynamic",
+    "description": "Endline Wall",
+    "shape": [
+        { "x": -5, "y": 23 },
+        { "x": 5, "y": 23 },
+        { "x": 5, "y": -23 },
+        { "x": -5, "y": -23 }
+    ],
+    "friction": {
+      "collision": 0.5,
+      "linear": 40,
+      "rotational": 600
+    },
+    "sensors": [],
+    "mass": 0.5,    
+    "controller": "lib/endline.so"
+}
